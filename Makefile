@@ -58,7 +58,6 @@ build-test-script:
 
 test:
 	./$(TEST_DIR)/$(TEST_SCRIPT_NAME)
-	echo checking dir contents
 	coverage report -m
 	cp .coverage work/
 	mkdir -p work/kb/deployment/lib
