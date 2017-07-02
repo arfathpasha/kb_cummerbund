@@ -34,7 +34,7 @@ install:
 - docker images
 - export PATH=$(pwd)/bin:$PATH
 - cd ../
-- git clone git@github.com:arfathpasha/kb_cummerbund.git
+- git clone https://github.com/arfathpasha/kb_cummerbund.git
 - cd kb_cummerbund
 - kb-sdk test -s
 - sed -i "s/test_token=/test_token=$TEST_TOKEN/" test_local/test.cfg
