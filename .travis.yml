@@ -48,10 +48,11 @@ script:
 
 after_success:
 - cp test_local/workdir/.coverage .
-#- sudo mkdir -p /kb/module/lib/
-#- sudo cp -R test_local/workdir/kb/module/lib/ /kb/module/lib/
+- sudo mkdir -p /kb/module/lib/
+- sudo cp -R test_local/workdir/kb/module/lib/ /kb/module/lib/
 - pwd
 - ls -l /kb/module/lib/
-- ls -la
+- test_local/workdir/kb/module/lib/
+- cat .coverage
 - coverage report -m
 - coveralls
