@@ -61,7 +61,7 @@ test:
 	coverage report -m
 	cp .coverage work/
 	mkdir -p work/kb/deployment/lib
-	cp -R /kb/deployment/lib/biokbase work/kb/deployment/lib
+	cp -R /kb/deployment/lib/kb_cummerbund work/kb/deployment/lib
 
 clean:
 	rm -rfv $(LBIN_DIR)
