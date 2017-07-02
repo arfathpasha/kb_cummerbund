@@ -60,8 +60,8 @@ test:
 	./$(TEST_DIR)/$(TEST_SCRIPT_NAME)
 	coverage report -m
 	cp .coverage work/
-	mkdir -p work/kb/deployment/lib
-	cp -R /kb/deployment/lib/kb_cummerbund work/kb/deployment/lib
+	mkdir -p work/kb/module/lib/
+	cp -R /kb/module/lib/kb_cummerbund/ work/kb/module/lib/
 
 clean:
 	rm -rfv $(LBIN_DIR)
