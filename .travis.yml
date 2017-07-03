@@ -51,7 +51,7 @@ after_success:
 - sudo mkdir -p /kb/module/lib/
 - sudo cp -R test_local/workdir/kb/module/lib/kb_cummerbund /kb/module/lib/
 - pwd
-- ls -l /kb/module/lib/
+- ls -l /kb/module/lib/kb_cummerbund
 - cat .coverage
 - coverage report -m
 - coveralls
